@@ -1,0 +1,43 @@
+body {
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.98); }
+
+.calculator {
+  width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 0 24px #887979; }
+
+.displayBoard {
+  background: #e6e8ea;
+  text-align: right;
+  padding: 10px 20px; }
+  .displayBoard .mainDisplay {
+    height: 40px;
+    margin: 10px 0;
+    font-size: 30px; }
+  .displayBoard .expression {
+    margin: 2px;
+    height: 20px;
+    text-align: right;
+    font-size: 15px; }
+
+.operationBoard {
+  background: #e6e8ea; }
+
+button.key {
+  width: 100px;
+  height: 80px;
+  border: none;
+  font-size: 25px;
+  transition: all 0.2s linear; }
+  button.key.doubleHeight {
+    height: 160px;
+    float: right; }
+  button.key.doubleWidth {
+    width: 200px; }
+  button.key:focus {
+    outline: none; }
+  button.key:hover {
+    background: #c8c9ca; }
+  button.key:active {
+    background: #b6b8b9; }

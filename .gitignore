@@ -23,3 +23,6 @@ yarn-error.log*
 
 # WebStorm Projects file
 /.idea
+
+# backup files
+/back
