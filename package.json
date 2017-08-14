@@ -5,6 +5,7 @@
   "main": "./src/index.js",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "enzyme": "^2.9.1",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.3",
     "node-sass-chokidar": "0.0.3",
@@ -13,7 +14,8 @@
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.2",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "react-test-renderer": "^15.6.1"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -44,5 +46,5 @@
   "bugs": {
     "url": "https://github.com/GuoXiaoyang/JavaScript_Calculator/issues"
   },
-  "homepage": "https://github.com/GuoXiaoyang/JavaScript_Calculator#readme"
+  "homepage": "."
 }

@@ -14,32 +14,22 @@ function KeyButton(props) {
 // functionBoard
 class FunctionBoard extends Component {
   renderDigitalButton(key) {
-    if (key === '0') {
-      return <KeyButton className="key digitalKey doubleWidth" value={key}
-                        onClick={() => this.props.digitalClick(key)}/>
-    }
-    return <KeyButton className="key digitalKey" value={key}
+    const name = `key digitalKey${key === '0' ? ' doubleWidth' : ''}`;
+    return <KeyButton className={name} value={key}
                       onClick={() => this.props.digitalClick(key)}/>
   }
 
   renderFunctionButton(key) {
-    if (key === '=') {
-      return <KeyButton className="key functionKey doubleHeight" value={key}
-                        onClick={() => this.props.functionClick(key)}/>
-    }
-    return <KeyButton className="key functionKey" value={key}
+    const name = `key functionKey${key === '=' ? ' doubleHeight' : ''}`;
+    return <KeyButton className={name} value={key}
                       onClick={() => this.props.functionClick(key)}/>
   }
 
   renderOperationButton(key) {
-    if (key === '*') {
-      return <KeyButton className="key operationKey" value="×"
-                        onClick={() => this.props.operationClick(key)}/>
-    } else if (key === '/') {
-      return <KeyButton className="key operationKey" value="÷"
-                        onClick={() => this.props.operationClick(key)}/>
-    }
-    return <KeyButton className="key operationKey" value={key}
+    let value = key;
+    if (key === '*') value = '×';
+    if (key === '/') value = '÷';
+    return <KeyButton className="key operationKey" value={value}
                       onClick={() => this.props.operationClick(key)}/>
   }
 
@@ -154,7 +144,7 @@ class Calculator extends Component {
     const value = Number.parseFloat(mainDisplay);
     if (this.state.lastOpt === '') {
       if (mainDisplay[mainDisplay.length - 1] !== '.') {
-        mainDisplay = value.toLocaleString('en-US',{maximumFractionDigits: 6});
+        mainDisplay = value.toLocaleString('en-US', {maximumFractionDigits: 6});
       } else {
         mainDisplay = `${value.toLocaleString('en-US')}.`;
       }
@@ -164,7 +154,7 @@ class Calculator extends Component {
       });
     } else {
       if (mainDisplay[mainDisplay.length - 1] !== '.') {
-        mainDisplay = value.toLocaleString('en-US',{maximumFractionDigits: 6});
+        mainDisplay = value.toLocaleString('en-US', {maximumFractionDigits: 6});
       } else {
         mainDisplay = `${value.toLocaleString('en-US')}.`;
       }
