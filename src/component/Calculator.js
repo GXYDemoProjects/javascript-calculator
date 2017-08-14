@@ -7,7 +7,7 @@ function KeyButton(props) {
     <button className={props.className} onClick={props.onClick}>
       {props.value}
     </button>
-  )
+  );
 }
 
 
@@ -303,3 +303,5 @@ const formatNumber = function (num) {
 };
 
 export default Calculator;
+export {optCalculator, formatNumber}
+
