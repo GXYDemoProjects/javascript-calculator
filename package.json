@@ -46,5 +46,9 @@
   "bugs": {
     "url": "https://github.com/GuoXiaoyang/JavaScript_Calculator/issues"
   },
-  "homepage": "."
+  "homepage": ".",
+  "devDependencies": {
+    "tslint": "^5.6.0",
+    "typescript": "^2.4.2"
+  }
 }
