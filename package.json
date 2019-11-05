@@ -1,5 +1,5 @@
 {
-  "name": "javascript_calculator",
+  "name": "javascript-calculator",
   "version": "0.1.0",
   "description": "my leetcode solution",
   "main": "./src/index.js",
@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GuoXiaoyang/JavaScript_Calculator.git"
+    "url": "git+https://github.com/GXYDemoProjects/javascript-calculator.git"
   },
   "keywords": [
     "Calculator",
@@ -44,7 +44,7 @@
   "author": "guoxiaoyang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GuoXiaoyang/JavaScript_Calculator/issues"
+    "url": "https://github.com/GXYDemoProjects/javascript-calculator/issues"
   },
   "homepage": ".",
   "devDependencies": {
